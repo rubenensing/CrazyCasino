@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CrazyCasino</title>
+        <link rel="stylesheet" href="style.css">
+         <div id="balance">Saldo: €0</div>
+    </head>
+    <body>
+        <header><h1>CRAZYCASINO</h1></header>
+        <container id="container">
+        <a href="blackjack.html" id="BlackJack"></a>
+        <a href="roulette.html" id="Roulette"></a>
+        </container>
+<script>
+
+  let balance = parseInt(localStorage.getItem('casinoBalance')) || 1000;
+  document.getElementById('balance').textContent = `Saldo: €${balance}`;
+</script>
+
+    </body>
+</html>
